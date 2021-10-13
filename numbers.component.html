@@ -1,0 +1,8 @@
+<section class="text-center p-3 ">  
+    <label for="userInput1" class="mx-auto px-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">First Number: </label>
+    <input [(ngModel)]="userInput1" (input)="sendUserInput1()" type="number" >
+    <br>
+    <br>
+    <label for="userInput2" class="mx-auto px-3" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: white;">Second Number: </label>
+    <input [(ngModel)]="userInput2" (input)="sendUserInput2()" type="number" >
+</section>

@@ -1,0 +1,26 @@
+
+<div style="background-color: teal;display: inline-block; margin-left: 35%;margin-top: 10%; border-radius: 40px; ">
+<div class="container text-center" style="text-align: center; background-color:rgba(34, 189, 94, 0.329); border-radius: 10px;">
+  <h1 style="color: white;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">ANGULAR COMPONENTS CALCULATOR</h1>
+</div>
+
+
+<app-numbers style="text-align: center;"
+(sendValue1)="receiveUserInput1($event)" 
+(sendValue2)="receiveUserInput2($event)">
+</app-numbers>
+<br>
+<app-operation style="text-align: center;"
+(opChoice)="receiveAdd($event)"
+(opChoice)="receiveSubtract($event)"
+(opChoice)="receiveMultiply($event)"
+(opChoice)="receiveDivide($event)">
+</app-operation>
+<br>
+<app-result style="text-align: center;"
+[userInput1]="userInput1"
+[userInput2]="userInput2"
+[operatorChoice]="operationChoice"
+>
+</app-result>
+</div>  
